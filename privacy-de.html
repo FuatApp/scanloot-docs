@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - ScanLoot</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0D0D1A;
+            color: #E8E8F0;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+            line-height: 1.65;
+        }
+        h1 { color: #fff; font-size: 28px; margin-bottom: 8px; }
+        h2 { color: #fff; font-size: 20px; margin-top: 32px; border-bottom: 1px solid #2A2A40; padding-bottom: 6px; }
+        h3 { color: #B6AEFF; font-size: 16px; margin-top: 20px; }
+        a { color: #8B7BFF; }
+        code, .meta { color: #888; font-size: 13px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { border: 1px solid #2A2A40; padding: 8px 12px; text-align: left; }
+        th { background: #1A1A2E; color: #B6AEFF; }
+        ul { padding-left: 20px; }
+        li { margin: 4px 0; }
+        .lang-switch { float: right; font-size: 13px; }
+        .lang-switch a { background: #1A1A2E; padding: 6px 12px; border-radius: 8px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch"><a href="privacy-en.html">English</a></div>
+    <h1>Datenschutzerklärung — ScanLoot</h1>
+    <p class="meta">Stand: April 2026</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>Fuat Sarac<br>E-Mail: scanloot.app@gmail.com</p>
+
+    <h2>2. Welche Daten wir erheben</h2>
+
+    <h3>2.1 Kamera-Bilder</h3>
+    <ul>
+        <li>Fotos deiner Sammelkarten werden <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert</li>
+        <li>Zur Kartenerkennung wird das Bild an die Google Gemini API gesendet (siehe 3.1)</li>
+        <li>Wir speichern keine Bilder auf unseren Servern</li>
+    </ul>
+
+    <h3>2.2 Sammlungsdaten</h3>
+    <ul>
+        <li>Kartennamen, Sets, Preise, Zustand und Mengen werden <strong>lokal auf deinem Gerät</strong> gespeichert</li>
+        <li>Es erfolgt keine Übertragung an unsere Server</li>
+    </ul>
+
+    <h3>2.3 Marktplatz-Kontodaten</h3>
+    <ul>
+        <li>Wenn du dein eBay-, CardTrader- oder Shopify-Konto verbindest, speichern wir OAuth-Tokens bzw. API-Keys verschlüsselt auf deinem Gerät (flutter_secure_storage)</li>
+        <li>Wir haben <strong>keinen Zugriff auf deine Passwörter</strong></li>
+        <li>Tokens werden ausschließlich verwendet, um in deinem Auftrag Inserate zu erstellen</li>
+        <li>Du kannst die Verbindung jederzeit in den App-Einstellungen trennen</li>
+    </ul>
+
+    <h3>2.4 Abo-Daten</h3>
+    <ul>
+        <li>Zahlungen werden über den Google Play Store abgewickelt</li>
+        <li>Wir verwenden RevenueCat zur Verwaltung von Abonnements</li>
+        <li>Wir erhalten <strong>keine Kreditkarten- oder Bankdaten</strong></li>
+        <li>RevenueCat erhält eine anonyme App-User-ID zur Zuordnung deines Abos</li>
+    </ul>
+
+    <h3>2.5 Preisdaten</h3>
+    <ul>
+        <li>Marktpreise werden von Cardmarket (öffentlich zugängliche Produktseiten), eBay (Browse API) und weiteren Quellen abgerufen</li>
+        <li>Cardmarket-Preise werden stündlich im Hintergrund aktualisiert und lokal gecacht</li>
+        <li>Es werden keine persönlichen Daten an Cardmarket übermittelt</li>
+    </ul>
+
+    <h3>2.6 Nutzungsstatistiken</h3>
+    <ul>
+        <li>Anzahl der Scans pro Tag (lokal gespeichert, zur Verwaltung des Free-Tier-Limits)</li>
+        <li>Keine Analytics, kein Tracking, keine Werbe-IDs</li>
+    </ul>
+
+    <h2>3. Drittanbieter-Dienste</h2>
+
+    <h3>3.1 Google Gemini API</h3>
+    <ul>
+        <li><strong>Zweck:</strong> KI-gestützte Kartenerkennung</li>
+        <li><strong>Übertragene Daten:</strong> Komprimiertes Kartenbild (JPEG)</li>
+        <li><strong>Speicherung durch Google:</strong> Gemäß <a href="https://ai.google.dev/terms">Google AI Datenschutzrichtlinie</a></li>
+        <li><strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</li>
+    </ul>
+
+    <h3>3.2 eBay API</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Preisabfrage (Browse API) und Inserat-Erstellung (Sell API)</li>
+        <li><strong>Übertragene Daten:</strong> Kartenname, Set, Zustand, Bilder, Preise</li>
+        <li><strong>Nur nach expliziter Nutzer-Aktion</strong> (Button „Quick List" / „Listing erstellen")</li>
+        <li><strong>Rechtsgrundlage:</strong> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>
+    </ul>
+
+    <h3>3.3 CardTrader API</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Inserat-Erstellung und Preisabfrage</li>
+        <li><strong>Übertragene Daten:</strong> Kartenname, Set, Zustand, Preis</li>
+        <li><strong>Nur nach expliziter Nutzer-Aktion</strong></li>
+        <li><strong>Rechtsgrundlage:</strong> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>
+    </ul>
+
+    <h3>3.4 Shopify API</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Produkt-Erstellung in deinem eigenen Shop</li>
+        <li><strong>Übertragene Daten:</strong> Produktdaten, Bilder, Preise</li>
+        <li><strong>Nur nach expliziter Nutzer-Aktion</strong></li>
+        <li><strong>Rechtsgrundlage:</strong> Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>
+    </ul>
+
+    <h3>3.5 Cardmarket (Preisdaten)</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Abruf öffentlich zugänglicher Marktpreise</li>
+        <li><strong>Übertragene Daten:</strong> Keine persönlichen Daten</li>
+        <li><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</li>
+    </ul>
+
+    <h3>3.6 RevenueCat</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Verwaltung von In-App-Abonnements</li>
+        <li><strong>Übertragene Daten:</strong> Anonyme App-User-ID, Kaufstatus</li>
+        <li><strong>Datenschutzrichtlinie:</strong> <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+        <li><strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO)</li>
+    </ul>
+
+    <h2>4. Datenspeicherung</h2>
+    <table>
+        <tr><th>Daten</th><th>Speicherort</th><th>Verschlüsselt</th><th>Löschbar</th></tr>
+        <tr><td>Kartenbilder</td><td>Gerät (lokal)</td><td>Nein</td><td>Ja, über App oder Dateisystem</td></tr>
+        <tr><td>Sammlungsdaten</td><td>Gerät (lokal)</td><td>Nein</td><td>Ja, App deinstallieren</td></tr>
+        <tr><td>Marktplatz-Tokens</td><td>Gerät (Secure Storage)</td><td>Ja (AES)</td><td>Ja, über Einstellungen</td></tr>
+        <tr><td>Preis-Cache</td><td>Gerät (lokal)</td><td>Nein</td><td>Ja, über Einstellungen</td></tr>
+        <tr><td>Scan-Zähler</td><td>Gerät (lokal)</td><td>Nein</td><td>Ja, App deinstallieren</td></tr>
+        <tr><td>Abo-Status</td><td>RevenueCat Cloud</td><td>Ja</td><td>Ja, Abo kündigen</td></tr>
+    </table>
+
+    <h2>5. Deine Rechte (DSGVO)</h2>
+    <p>Du hast das Recht auf:</p>
+    <ul>
+        <li><strong>Auskunft</strong> über deine gespeicherten Daten (Art. 15 DSGVO)</li>
+        <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+        <li><strong>Löschung</strong> deiner Daten (Art. 17 DSGVO)</li>
+        <li><strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)</li>
+        <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+        <li><strong>Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        <li><strong>Beschwerde</strong> bei einer Aufsichtsbehörde</li>
+    </ul>
+    <p>Zur Ausübung deiner Rechte kontaktiere uns unter: <a href="mailto:scanloot.app@gmail.com">scanloot.app@gmail.com</a></p>
+
+    <h2>6. Datenweitergabe</h2>
+    <p>Wir verkaufen deine Daten <strong>nicht</strong> an Dritte. Eine Weitergabe erfolgt ausschließlich:</p>
+    <ul>
+        <li>An Google (Gemini API) zur Kartenerkennung</li>
+        <li>An eBay, CardTrader oder Shopify zur Inserat-Erstellung (nur nach deiner Aktion)</li>
+        <li>An RevenueCat zur Abo-Verwaltung</li>
+    </ul>
+
+    <h2>7. Datensicherheit</h2>
+    <ul>
+        <li>Marktplatz-Tokens werden mit AES-Verschlüsselung im Secure Storage gespeichert</li>
+        <li>API-Kommunikation erfolgt ausschließlich über HTTPS/TLS</li>
+        <li>API-Keys werden zur Build-Zeit eingebettet und nicht im Quellcode gespeichert</li>
+    </ul>
+
+    <h2>8. Kinder</h2>
+    <p>Diese App ist nicht für Kinder unter 16 Jahren bestimmt. Wir erheben wissentlich keine Daten von Kindern.</p>
+
+    <h2>9. Änderungen</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung zu aktualisieren. Die aktuelle Version ist in der App unter Profil &gt; Einstellungen einsehbar.</p>
+
+    <h2>10. Kontakt</h2>
+    <p>Bei Fragen zum Datenschutz:<br>Fuat Sarac<br><a href="mailto:scanloot.app@gmail.com">scanloot.app@gmail.com</a></p>
+</body>
+</html>
