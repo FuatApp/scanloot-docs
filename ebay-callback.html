@@ -82,6 +82,14 @@
         if (code) {
             // MUST encode - eBay codes contain # which breaks URIs
             const deepLink = 'cardscanner://ebay_de-callback?code=' + encodeURIComponent(code);
+
+            // Auto-copy the code to the clipboard immediately. iOS Safari
+            // often blocks custom-scheme redirects on user-initiated nav,
+            // so the deep-link round-trip can silently fail. With the code
+            // already on the clipboard, the user can just switch back to
+            // ScanLoot and the app pastes it automatically.
+            try { navigator.clipboard.writeText(code); } catch (e) {}
+
             window.location.href = deepLink;
 
             // After 2 seconds, show manual fallback
@@ -89,10 +97,10 @@
                 card.innerHTML =
                     '<div class="icon">&#x2705;</div>' +
                     '<h1 class="success">eBay verbunden!</h1>' +
-                    '<p>Falls die App sich nicht automatisch oeffnet, kopiere diesen Code und fuege ihn in der App ein:</p>' +
+                    '<p>Der Code wurde automatisch kopiert. Wechsle zur&uuml;ck zu ScanLoot &mdash; die App f&uuml;gt ihn selbst ein.</p>' +
                     '<div class="code-box" onclick="copyCode()">' + code + '</div>' +
-                    '<a class="btn" href="' + deepLink + '">App oeffnen</a>' +
-                    '<p class="hint">Tippe auf den Code um ihn zu kopieren</p>';
+                    '<a class="btn" href="' + deepLink + '">ScanLoot &ouml;ffnen</a>' +
+                    '<p class="hint">Falls nichts passiert: Code antippen, dann zur App wechseln</p>';
             }, 2000);
         } else {
             card.innerHTML =
