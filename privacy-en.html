@@ -31,7 +31,7 @@
 <body>
     <div class="lang-switch"><a href="privacy-de.html">Deutsch</a></div>
     <h1>Privacy Policy — ScanLoot</h1>
-    <p class="meta">Last updated: May 2026</p>
+    <p class="meta">Last updated: October 2026</p>
 
     <h2>1. Data Controller</h2>
     <p>Fuat Sarac<br>Email: scanloot.app@gmail.com</p>
@@ -77,7 +77,7 @@
     <h3>2.6 Usage Statistics</h3>
     <ul>
         <li>Number of scans per day (stored locally for free tier limit management)</li>
-        <li>No analytics, no tracking, no advertising IDs</li>
+        <li>Usage analytics only with your consent (see 3.8). Without consent: no analytics. No tracking, no advertising IDs.</li>
     </ul>
 
     <h2>3. Third-Party Services</h2>
@@ -129,6 +129,23 @@
         <li><strong>Data transmitted:</strong> Stack traces, OS and app version, device model, breadcrumbs (in-app event trail). No personal data. IP address is not stored by default.</li>
         <li><strong>Privacy policy:</strong> <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
         <li><strong>Legal basis:</strong> Legitimate interest (Art. 6(1)(f) GDPR) — app stability</li>
+    </ul>
+
+    <h3>3.8 Firebase Analytics (anonymous usage statistics, consent only)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> We measure how the app is used (e.g. onboarding steps, whether a scan succeeds, when the subscription screen is opened or closed, whether a purchase completes) to improve the app. No card images, collection contents or names are transmitted.</li>
+        <li><strong>Data transmitted:</strong> App events with simple parameters (e.g. scan source, result ok/not ok, subscription product), a random app-instance ID from Firebase, app version, operating system, device model, language and approximate country (derived from the truncated IP address). We set no user ID (no link to your account) and do <strong>not</strong> read any advertising ID (AD_ID/IDFA are not used; Google signals and ad personalization are disabled).</li>
+        <li><strong>Legal basis:</strong> Your consent, Art. 6(1)(a) GDPR and section 25(1) TDDDG. Collection is <strong>off by default</strong> and only starts once you agree during onboarding or switch on "Anonymous usage statistics" in Settings. Without consent no events are sent.</li>
+        <li><strong>Withdrawal:</strong> At any time, with effect for the future, in the app under Settings &gt; "Anonymous usage statistics" (switch off). Processing carried out before withdrawal remains lawful.</li>
+        <li><strong>Provider:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Processing by Google LLC (USA) is possible, based on the EU-US Data Privacy Framework or standard contractual clauses.</li>
+        <li><strong>Retention:</strong> Event data is deleted automatically after 2 months.</li>
+        <li><strong>Privacy policy:</strong> <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h3>3.9 Use without an account</h3>
+    <ul>
+        <li>You can scan cards without creating an account. The app signs you in anonymously with Firebase; this creates a random ID without name or email address, used to assign your scan allowance and prevent abuse.</li>
+        <li>This ID is <strong>not</strong> passed to Firebase Analytics. Usage statistics (3.8) are independent of it and only active with your consent.</li>
     </ul>
 
     <h2>4. Data Storage</h2>

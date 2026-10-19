@@ -31,7 +31,7 @@
 <body>
     <div class="lang-switch"><a href="privacy-en.html">English</a></div>
     <h1>Datenschutzerklärung — ScanLoot</h1>
-    <p class="meta">Stand: Mai 2026</p>
+    <p class="meta">Stand: Oktober 2026</p>
 
     <h2>1. Verantwortlicher</h2>
     <p>Fuat Sarac<br>E-Mail: scanloot.app@gmail.com</p>
@@ -77,7 +77,7 @@
     <h3>2.6 Nutzungsstatistiken</h3>
     <ul>
         <li>Anzahl der Scans pro Tag (lokal gespeichert, zur Verwaltung des Free-Tier-Limits)</li>
-        <li>Keine Analytics, kein Tracking, keine Werbe-IDs</li>
+        <li>Nutzungsanalyse nur mit deiner Einwilligung (siehe 3.8). Ohne Einwilligung: keine Analytics. Kein Tracking, keine Werbe-IDs.</li>
     </ul>
 
     <h2>3. Drittanbieter-Dienste</h2>
@@ -135,6 +135,23 @@
         <li><strong>Übertragene Daten:</strong> Stack-Traces, OS- und App-Version, Gerätemodell, Breadcrumbs (App-interne Ereignisspur). Keine personenbezogenen Daten. IP-Adresse wird standardmäßig nicht gespeichert.</li>
         <li><strong>Datenschutzrichtlinie:</strong> <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
         <li><strong>Rechtsgrundlage:</strong> Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) — Funktionsfähigkeit der App</li>
+    </ul>
+
+    <h3>3.8 Firebase Analytics (anonyme Nutzungsstatistik, nur mit Einwilligung)</h3>
+    <ul>
+        <li><strong>Zweck:</strong> Wir messen, wie die App genutzt wird (z. B. welche Schritte im Einstieg, ob ein Scan gelingt, wann die Abo-Ansicht geöffnet oder geschlossen wird, ob ein Kauf zustande kommt), um die App zu verbessern. Es werden keine Kartenbilder, Sammlungsinhalte oder Namen übertragen.</li>
+        <li><strong>Übertragene Daten:</strong> App-Ereignisse mit einfachen Parametern (z. B. Scan-Quelle, Ergebnis ok/nicht ok, Abo-Produkt), eine zufällige App-Instanz-Kennung von Firebase, App-Version, Betriebssystem, Gerätemodell, Sprache und ungefähres Land (aus der gekürzten IP-Adresse). Wir setzen keine Nutzerkennung (keine Verknüpfung mit deinem Konto) und lesen <strong>keine Werbe-ID</strong> aus (AD_ID/IDFA werden nicht verwendet; Google-Signale und Werbe-Personalisierung sind abgeschaltet).</li>
+        <li><strong>Rechtsgrundlage:</strong> Deine Einwilligung, Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Die Erhebung ist <strong>standardmäßig ausgeschaltet</strong> und startet erst, wenn du im Einstieg zustimmst oder in den Einstellungen den Schalter „Anonyme Nutzungsstatistik“ einschaltest. Ohne Einwilligung werden keine Ereignisse gesendet.</li>
+        <li><strong>Widerruf:</strong> Jederzeit mit Wirkung für die Zukunft in der App unter Einstellungen &gt; „Anonyme Nutzungsstatistik“ (Schalter aus). Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt.</li>
+        <li><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Eine Verarbeitung durch Google LLC (USA) ist möglich; Grundlage ist das EU-US Data Privacy Framework bzw. Standardvertragsklauseln.</li>
+        <li><strong>Speicherdauer:</strong> Ereignisdaten werden nach 2 Monaten automatisch gelöscht.</li>
+        <li><strong>Datenschutzrichtlinie:</strong> <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h3>3.9 Nutzung ohne Konto</h3>
+    <ul>
+        <li>Du kannst Karten scannen, ohne ein Konto anzulegen. Die App meldet dich dazu anonym bei Firebase an; es entsteht eine zufällige Kennung ohne Name oder E-Mail-Adresse, mit der dein Scan-Kontingent zugeordnet und Missbrauch verhindert wird.</li>
+        <li>Diese Kennung wird <strong>nicht</strong> an Firebase Analytics übergeben. Die Nutzungsstatistik (3.8) ist davon unabhängig und nur mit Einwilligung aktiv.</li>
     </ul>
 
     <h2>4. Datenspeicherung</h2>
